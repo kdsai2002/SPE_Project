@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    image: jahnavi17hm/frontend-image:latest
+    ports:
+      - '3000:3000'
+  backend:
+    image: jahnavi17hm/backend-image:latest
+    ports:
+      - '5000:5000'
+    environment:
+      - MONGO=mongodb+srv://jahnchal:tz4vuUbcT6HQwbNt@cluster0.ndxeajy.mongodb.net/
+      - JWT=f0900068cdd54283418d385c837a1069830189c9a2622dcf74b1b01c2baab006502d02c4513ca72a49c0072b8c63d9f0eaf9ef26b49d30fe9e0c1ef77971790e
+      
